@@ -1,6 +1,6 @@
 // 2025.08.20
 
-fun main() {
+//fun main() {
 //    var child = Child() // 인스턴스화
 //    child.sayHello()
 //    child.myHello()
@@ -52,65 +52,65 @@ fun main() {
 //    println(5.isEven())
 
     // 예제 3
-    println(4.isOdd())
-    println(7.isOdd())
+//    println(4.isOdd())
+//    println(7.isOdd())
+//
+//    // 예제 4
+//    val book1 = Book("그리고 아무도 없었다", "아가사 크리스티")
+//    val book2 = book1.copy()
+//    println(book1)
+//    println(book2)
+//    println(System.identityHashCode(book1))
+//    println(System.identityHashCode(book2))
+//
+//    // 예제 5
+//    val car = Car()
+//    car.move()
+//    car.crash()
+//    val train = Train()
+//    train.move()
+//    train.crash()
+//    val airplane = Airplane()
+//    airplane.move()
+//    airplane.crash()
 
-    // 예제 4
-    val book1 = Book("그리고 아무도 없었다", "아가사 크리스티")
-    val book2 = book1.copy()
-    println(book1)
-    println(book2)
-    println(System.identityHashCode(book1))
-    println(System.identityHashCode(book2))
-
-    // 예제 5
-    val car = Car()
-    car.move()
-    car.crash()
-    val train = Train()
-    train.move()
-    train.crash()
-    val airplane = Airplane()
-    airplane.move()
-    airplane.crash()
-
-}
+//}
 
 // 예제 5
-sealed class Transport {
-    abstract fun move()
-    abstract fun crash()
-}
-
-class Car: Transport() {
-    override fun move() = println("안녕 난 자동차야 부릉부릉~")
-    override fun crash() = println("자동차 충돌! 꽝!!")
-}
-
-class Train: Transport() {
-    override fun move() = println("안녕 난 기차야 칙칙폭폭~")
-    override fun crash() = println("기차 충돌! 콰광!!")
-}
-
-class Airplane: Transport() {
-    override fun move() = println("안녕 난 비행기야 윙윙~")
-    override fun crash() = println("비행기 충돌! 꽈과광!!!")
-}
-
-fun handleTransport(t: Transport) {
-    when (t) {
-        is Car -> t.move()
-        is Train -> t.move()
-        is Airplane -> t.move()
-    }
-}
+//sealed class Transport {
+//    abstract fun move()
+//    abstract fun crash()
+//}
+//
+//class Car: Transport() {
+//    override fun move() = println("안녕 난 자동차야 부릉부릉~")
+//    override fun crash() = println("자동차 충돌! 꽝!!")
+//}
+//
+//class Train: Transport() {
+//    override fun move() = println("안녕 난 기차야 칙칙폭폭~")
+//    override fun crash() = println("기차 충돌! 콰광!!")
+//}
+//
+//class Airplane: Transport() {
+//    override fun move() = println("안녕 난 비행기야 윙윙~")
+//    override fun crash() = println("비행기 충돌! 꽈과광!!!")
+//}
+//
+//fun handleTransport(t: Transport) {
+//    when (t) {
+//        is Car -> t.move()
+//        is Train -> t.move()
+//        is Airplane -> t.move()
+//    }
+//}
 
 
 // 예제 4
-data class Book(val title: String, val author: String)
+//data class Book(val title: String, val author: String)
 
 // 예제 3
-fun Int.isOdd(): Boolean = this % 2 != 0
+//fun Int.isOdd(): Boolean = this % 2 != 0
 
 // 클래스 확장 - 정수
 //fun Int.isEven(): Boolean = this % 2 == 0
